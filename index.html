@@ -8,7 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
 		<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 		<script src="jquery.timers.js" type="text/javascript"></script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-YFJYCQ6V88"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LGGPZLR7XT"></script>
 		<script>
 			window.dataLayer = window.dataLayer || []
 			function gtag() {
@@ -16,7 +17,7 @@
 			}
 			gtag("js", new Date())
 
-			gtag("config", "G-YFJYCQ6V88")
+			gtag("config", "G-LGGPZLR7XT")
 		</script>
 		<style type="text/css">
 			.body {
@@ -154,7 +155,7 @@
 				copy.setTime(copy.getTime() + hours * 60 * 60 * 1000)
 				return copy
 			}
-			
+
 			function addMinutes(date, minutes) {
 				const dateCopy = new Date(date)
 				dateCopy.setMinutes(date.getMinutes() + minutes)
@@ -229,7 +230,7 @@
 				now = new Date()
 				spantime = (addHours(nextTime, eachTime) - now) / 1000
 				initEachTime(true)
-				eating = (addMinutes(nextTime,15) - now) / 1000
+				eating = (addMinutes(nextTime, 15) - now) / 1000
 			}
 
 			function getTimeFormat(spantime) {
