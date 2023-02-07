@@ -204,7 +204,7 @@
 
 			initEachTime(false)
 			spantime = (nextTime - now) / 1000
-			let eating = (now - addHours(nextTime, -3.5)) / 1000
+			let eating = (now - addHours(nextTime, (eachTime*-1))) / 1000
 			initNow()
 			function initNow() {
 				$(this).everyTime("1s", function () {
@@ -231,7 +231,7 @@
 				now = new Date()
 				spantime = (addHours(nextTime, eachTime) - now) / 1000
 				initEachTime(true)
-				eating = (addMinutes(addHours(nextTime, -3.5),15) - now) / 1000
+				eating = (addMinutes(addHours(nextTime, (eachTime*-1)),15) - now) / 1000
 			}
 
 			function getTimeFormat(spantime) {
